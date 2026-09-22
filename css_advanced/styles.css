@@ -68,7 +68,8 @@ main > section:first-child > div:first-child p {
   margin: 10px 0 40px;
 }
 
-main > section:first-child button {
+main > section:first-child button,
+main > section:nth-child(4) button {
   background: var(--color-primary);
   color: var(--color-white);
   font-family: inherit;
@@ -267,5 +268,54 @@ main > section:nth-child(3) > div > div > div:nth-child(5) p {
   color: var(--color-primary);
   font-size: 14px;
   font-weight: 600;
+  margin: 0;
+}
+
+/* Membership */
+main > section:nth-child(4) {
+  background: var(--color-dark);
+  padding: 70px 20px 90px;
+  text-align: center;
+}
+
+main > section:nth-child(4) > h1 {
+  color: var(--color-white);
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0 0 60px;
+}
+
+main > section:nth-child(4) > h1 span {
+  color: var(--color-primary);
+}
+
+main > section:nth-child(4) > div {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+main > section:nth-child(4) > div > div {
+  width: 220px;
+}
+
+main > section:nth-child(4) > div img {
+  width: 45px;
+  height: 45px;
+}
+
+main > section:nth-child(4) > div h2 {
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+}
+
+main > section:nth-child(4) > div p {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.5;
   margin: 0;
 }
